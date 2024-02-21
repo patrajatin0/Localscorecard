@@ -8,10 +8,10 @@
 </head>
 <body>
     <div class="cricket ">
-        <h2>Cricket Score Count:</h2>
-        <div class="team">
+        <h2 class="heading">Cricket Score Count:</h2>
+        <div class="team-container">
           
-               <div id="hoster-team">
+               <div id="hoster-team"  class="team">
                    <h3>HOST TEAM</h3>
                    <h2 id="count-el">0</h2>
                    <div >
@@ -25,10 +25,7 @@
                         <button id="increment-btn" onclick="incrementwide()" >WIDE</button>
                    </div>
                </div> 
-               
-          
-           
-            <div id="visiter-team">
+            <div id="visiter-team" class="team">
                <h3>VISIT TEAM</h3>
                <h2 id="count-Team">0</h2>
                <button id="increment-2" onclick="adding()">+1</button>
@@ -41,11 +38,15 @@
                <button id="increment-2" onclick="addingWIDE()">WIDE</button>
             </div>
        </div>
-       <button id="restart" onclick="restart1()">RESTART</button>
+       <div class="btn-container">
+        <button id="restart" onclick="restart1()">RESTART</button>
+        <button id="save-btn" onclick ="save()">SAVE</button>
+       </div>
+     
+       <span id="save-history"></span>
     
     </div>
    
-    
     
     <script src="index.js"></script>
 </body>
