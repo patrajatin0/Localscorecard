@@ -71,8 +71,8 @@ function addingWIDE() {
 }
 function restart1(){
    
-    countEl.innerText = countTeam.innerText=0;
-    count = count1= 0 ;
+    countEl.innerText = countTeam.innerText = saveEl.textContent=0;
+     count = count1= 0 ;
 
 }
 let saveEl = document.getElementById("save-history")
@@ -83,25 +83,5 @@ function save(){
     let saveData = saveNumber + "-"
     saveEl.textContent += saveData;
     countEtextContent = 0 ;
-    count = 0 ;
+    // count = 0 ;
 }
-
-
-// let a = 10 ; 
-// let b = 7 ;
-// console.log(a)
-
-// function display(){
-//     let a = 10 ;
-
-//     console.log(a);
-// }
-
-// function displaySome(){
-//     a = 20 ; 
-//     console.log(a);
-// }
-// displaySome() // 20 
-// display();  // 10
-
-// console.log(a)
