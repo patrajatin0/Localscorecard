@@ -34,6 +34,10 @@ function incrementwide(){
     count = count + 1
     countEl.innerText = count
 }
+function decrement1(){
+    count = count - 1
+    countEl.innerText = count
+}
 
 let countTeam = document.getElementById("count-Team")
 let count1 = 0
@@ -69,6 +73,10 @@ function addingWIDE() {
     count1 = count1 + 1
     countTeam.innerText = count1
 }
+function decrement2(){
+    count1 = count1 - 1
+    countTeam.innerText = count1
+}
 function restart1(){
    
     countEl.innerText = countTeam.innerText = saveEl.textContent=0;
@@ -83,5 +91,6 @@ function save(){
     let saveData = saveNumber + "-"
     saveEl.textContent += saveData;
     countEtextContent = 0 ;
-    // count = 0 ;
+    
+    
 }
